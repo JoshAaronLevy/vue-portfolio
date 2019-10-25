@@ -14,12 +14,10 @@ const SidebarStore = {
     const simulateWindowResize = setInterval(() => {
       window.dispatchEvent(new Event("resize"));
     }, 180);
-
     // we stop the simulation of Window Resize after the animations are completed
     setTimeout(() => {
       clearInterval(simulateWindowResize);
     }, 1000);
-
     this.isMinimized = !this.isMinimized;
   }
 };
