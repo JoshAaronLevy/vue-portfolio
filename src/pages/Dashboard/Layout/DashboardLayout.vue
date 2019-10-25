@@ -11,7 +11,7 @@
       :background-image="sidebarBackgroundImage"
       :data-background-color="sidebarBackgroundColor"
     >
-      <user-menu></user-menu>
+      <!-- <user-menu></user-menu> -->
       <mobile-menu></mobile-menu>
       <template slot="links">
         <sidebar-item :link="{ name: 'Dashboard', icon: 'dashboard', path: '/dashboard' }">
@@ -21,9 +21,6 @@
             :link="{ name: 'Pricing', path: '/pricing' }"
           ></sidebar-item>
           <sidebar-item
-            :link="{ name: 'RTL Support', path: '/pages/rtl' }"
-          ></sidebar-item>
-          <sidebar-item
             :link="{ name: 'Timeline', path: '/pages/timeline' }"
           ></sidebar-item>
           <sidebar-item
@@ -31,9 +28,6 @@
           ></sidebar-item>
           <sidebar-item
             :link="{ name: 'Register', path: '/register' }"
-          ></sidebar-item>
-          <sidebar-item
-            :link="{ name: 'Lock Screen', path: '/lock' }"
           ></sidebar-item>
           <sidebar-item
             :link="{ name: 'User Profile', path: '/pages/user' }"
@@ -89,12 +83,6 @@
         </sidebar-item>
         <sidebar-item 
           :link="{ name: 'Widgets', icon: 'widgets', path: '/widgets' }"
-        ></sidebar-item>
-        <sidebar-item 
-          :link="{ name: 'Charts', icon: 'timeline', path: '/charts' }"
-        ></sidebar-item>
-        <sidebar-item 
-          :link="{ name: 'Calendar', icon: 'date_range', path: '/calendar' }"
         ></sidebar-item>
       </template>
     </side-bar>
